@@ -55,7 +55,10 @@ namespace AuthDemo.Web.Controllers
                 new Claim("user", email) 
             };
 
-            //Make sure to add a using on top:
+            //The next line of code is the one that actually signs in the user
+            //it basically sets a special cookie on the clients machine that
+            //sets them as "logged in". Before using it though, make sure to add a
+            //using on top:
             //using Microsoft.AspNetCore.Authentication;
             HttpContext.SignInAsync(new ClaimsPrincipal(
                 new ClaimsIdentity(claims, "Cookies", "user", "role"))).Wait();
