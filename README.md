@@ -24,3 +24,8 @@ To check if a user is logged in, you can use the same `User.Identity.IsAuthentic
 To log out a user, do the following:
 
 https://github.com/LIT-W09/AuthDemo/blob/master/AuthDemo.Web/Controllers/AccountController.cs#L68
+
+To only give logged in users access to a specific page, use the `[Authorize]` attribute:
+
+https://github.com/LIT-W09/AuthDemo/blob/master/AuthDemo.Web/Controllers/HomeController.cs#L33
+
