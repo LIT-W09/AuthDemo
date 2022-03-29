@@ -17,7 +17,7 @@ https://github.com/LIT-W09/AuthDemo/blob/master/AuthDemo.Web/Startup.cs#L56-L57
 
 Then, to actually log a user in, here's the code needed for that:
 
-https://github.com/LIT-W09/AuthDemo/blob/master/AuthDemo.Web/Controllers/AccountController.cs#L51-L61
+https://github.com/LIT-W09/AuthDemo/blob/master/AuthDemo.Web/Controllers/AccountController.cs#L51-L64
 
 To check if a user is logged in, you can use the same `User.Identity.IsAuthenticated` property, and to get the currently logged in users email, you can do `User.Identity.Name`
 
